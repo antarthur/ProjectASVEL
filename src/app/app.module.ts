@@ -11,6 +11,8 @@ import { MatMenuModule} from '@angular/material/menu';
 import { TripComponent } from './trip/trip.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { ActivityComponent } from './activity/activity.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     TripComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CalendarComponent,
+    ActivityComponent
   ],
   imports: [
     BrowserModule,

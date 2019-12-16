@@ -1,4 +1,7 @@
-<app-header></app-header>
-<app-trip *ngIf="coreToDisplay=='trip'"></app-trip>
-<app-login *ngIf="coreToDisplay=='login'"></app-login>
+<app-header (coreToDisplay)="coreToDisplayHandler($event)"></app-header>
+<app-trip *ngIf="coreToDisplay=='Trip'"></app-trip>
+<app-login *ngIf="coreToDisplay=='Login'"></app-login>
+<app-home *ngIf="coreToDisplay=='Home'"></app-home>
+<app-calendar *ngIf="coreToDisplay=='Calendar'"></app-calendar>
+<app-activity *ngIf="coreToDisplay=='Activity'"></app-activity>
 <app-footer></app-footer>

@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ProjectASVEL';
 
-  firstname = ""
-  secondname = ""
-  coreToDisplay = "login"
+  firstname: string = ""
+  secondname: string = ""
+  coreToDisplay: string = "Login"
+
+  coreToDisplayHandler(core: string) {
+    this.coreToDisplay = core
+  }
 }
