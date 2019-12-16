@@ -1,0 +1,19 @@
+<header class="row" style="position: absolute; width: 100%; background-color: coral; height: 50px;">
+    <div class="col">
+        <img src="./assets/logo.png" style="left: 0; top: 0;" />
+        <button mat-button>Accueil</button>
+        <button mat-button>Sortie</button>
+        <button mat-button>Calendrier</button>
+        <button mat-button>Activite</button>
+        <button mat-button [matMenuTriggerFor]="menu">Admin</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Adherents</button>
+            <button mat-menu-item>Sorties</button>
+            <button mat-menu-item>Activites</button>
+            <button mat-menu-item>Emails</button>
+        </mat-menu>
+    </div>
+    <div style="text-align: end;" class="col">
+        <img src="./assets/logo.png" style="right: 0; top: 0;" />
+    </div>
+</header>
