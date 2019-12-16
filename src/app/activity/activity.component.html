@@ -1,1 +1,21 @@
-<p>activity works!</p>
+<div class="container" style="height: 100%;">
+    <div *ngIf="activityToDisplay=='Alpinisme'" style="text-align: center; height: 75px; font-size: 36px;font-weight: bold;">Alpinisme</div>
+    <div *ngIf="activityToDisplay=='Escalade'" style="text-align: center; height: 75px; font-size: 36px;font-weight: bold;">Escalade</div>
+    <div *ngIf="activityToDisplay=='Randonnee'" style="text-align: center; height: 75px; font-size: 36px;font-weight: bold;">Randonnee</div>
+    <div *ngIf="activityToDisplay=='SkiAlpin'" style="text-align: center; height: 75px; font-size: 36px;font-weight: bold;">Ski Alpin</div>
+    <div *ngIf="activityToDisplay=='SkiDeFond'" style="text-align: center; height: 75px; font-size: 36px;font-weight: bold;">Ski De Fond</div>
+    <div *ngIf="activityToDisplay=='SkiDeRandonnee'" style="text-align: center; height: 75px; font-size: 36px;font-weight: bold;">Ski De Randonnee</div>
+    <div class="row">
+        <div class="col">
+            <img *ngIf="activityToDisplay=='Alpinisme'" src="./assets/Alpinisme.jpg" style="width: 100%;">
+            <img *ngIf="activityToDisplay=='Escalade'" src="./assets/Escalade.jpg" style="width: 100%;">
+            <img *ngIf="activityToDisplay=='Randonnee'" src="./assets/Randonnee.jpg" style="width: 100%;">
+            <img *ngIf="activityToDisplay=='SkiAlpin'" src="./assets/Ski_alpin.jpg" style="width: 100%;">
+            <img *ngIf="activityToDisplay=='SkiDeFond'" src="./assets/Ski_de_fond.jpg" style="width: 100%;">
+            <img *ngIf="activityToDisplay=='SkiDeRandonnee'" src="./assets/Ski_de_randonnee.jpg" style="width: 100%;">
+        </div>
+        <div class="col">
+            Lorem ipsoum
+        </div>
+    </div>
+</div>

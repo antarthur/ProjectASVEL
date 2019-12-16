@@ -1,7 +1,7 @@
-<header class="row" style="position: relative; width: 100%; background-color: coral; height: 50px;">
-    <div class="col">
+<header class="navbar" style="position: relative; width: 100%; background-color: coral; height: 50px;">
+    <div>
         <img src="./assets/logo.png" style="left: 0; top: 0;" />
-        <div style="position:relative; top: -40px; left: 75px;">
+        <div style="position:relative; top: -40px; padding-left: 75px;">
             <button mat-button style="margin-right: 10px;" (click)="updateCore('Home')">Accueil</button>
             <button mat-button style="margin-right: 10px;" (click)="updateCore('Trip')">Sortie</button>
             <button mat-button style="margin-right: 10px;" (click)="updateCore('Calendar')">Calendrier</button>
@@ -15,7 +15,7 @@
             </mat-menu>
         </div>
     </div>
-    <div style="text-align: end;" class="col">
+    <div style="text-align: end;">
         <img (click)="updateCore('Login')" src="./assets/logo.png" style="position: relative; right: 0; top: -75px;" />
     </div>
 </header>
