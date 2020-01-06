@@ -1,23 +1,24 @@
 <div class="container">
     <div class="row">
-        <div class="column">
-            <p>okokokok</p>
+        <div class="col">
+            <h3 >Album :</h3 >
+            <img style="margin-top: 15px;" src="" alt="Plusieurs images défilantes">
         </div>
-        <div class="column">
-            Activités :
-            <table border="1">
+        <div class="col">
+            <h3>Activités :</h3>
+            <table class="table" style="margin-top: 15px;">
                 <tbody style="text-align: center;">
                     <tr>
-                        <td>Alpinisme</td>
-                        <td>Ski alpin</td>
+                        <td (click)="goToActivity({core: 'Activity', activity: 'Alpinisme'})"><a href="#">Alpinisme</a></td>
+                        <td (click)="goToActivity({core: 'Activity', activity: 'SkiAlpin'})"><a href="#">Ski alpin</a></td>
                     </tr>
                     <tr>
-                        <td>Escalade</td>
-                        <td>Ski de fond</td>
+                        <td (click)="goToActivity({core: 'Activity', activity: 'Escalade'})"><a href="#">Escalade</a></td>
+                        <td (click)="goToActivity({core: 'Activity', activity: 'SkiDeFond'})"><a href="#">Ski de fond</a></td>
                     </tr>
                     <tr>
-                        <td>Randonnée</td>
-                        <td>Ski de randonnée</td>
+                        <td (click)="goToActivity({core: 'Activity', activity: 'Randonnee'})"><a href="#">Randonnée</a></td>
+                        <td (click)="goToActivity({core: 'Activity', activity: 'SkiDeRandonnee'})"><a href="#">Ski de randonnée</a></td>
                     </tr>
                 </tbody>
             </table>

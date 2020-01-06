@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +7,14 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-
+  @Output() activityToDisplay: EventEmitter<object> = new EventEmitter();
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  
-
+  goToActivity(activity: object){
+    this.activityToDisplay.emit(activity)
+  }
 }

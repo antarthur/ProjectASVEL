@@ -8,11 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ProjectASVEL';
 
-  firstname: string = ""
-  secondname: string = ""
-  coreToDisplay: string = "Trip"
+  coreToDisplay: string = "Home"
+  activityToDisplay: string = "Alpinisme"
 
   coreToDisplayHandler(core: string) {
     this.coreToDisplay = core
+  }
+
+  activityToDisplayHandler(element) {
+    this.coreToDisplay = element.core
+    this.activityToDisplay = element.activity
   }
 }

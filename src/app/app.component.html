@@ -2,8 +2,8 @@
 <div>
     <app-trip *ngIf="coreToDisplay=='Trip'"></app-trip>
     <app-login *ngIf="coreToDisplay=='Login'"></app-login>
-    <app-home *ngIf="coreToDisplay=='Home'"></app-home>
+    <app-home *ngIf="coreToDisplay=='Home'" (activityToDisplay)="activityToDisplayHandler($event)"></app-home>
     <app-calendar *ngIf="coreToDisplay=='Calendar'"></app-calendar>
-    <app-activity *ngIf="coreToDisplay=='Activity'"></app-activity>
+    <app-activity *ngIf="coreToDisplay=='Activity'" [activityToDisplay]=activityToDisplay></app-activity>
 </div>
 <app-footer></app-footer>
