@@ -1,3 +1,66 @@
-<p>trip works!</p>
-<p>trip works!</p>
-<p>trip works!</p>
+<div class="container" style="height: 100%;">
+    <div class="row">
+        <!-- Trip list -->
+        <div class="col">
+            <h3 style="margin-top: 15px;">Liste des sorties :</h3>
+            <table class="table" style="margin-top: 20px;">
+                <tbody>
+                    <tr>
+                        <td style="min-width: 105px;">Date :</td>
+                        <td>Nom :</td>
+                        <td>Lieu :</td>
+                        <td>Activité :</td>
+                    </tr>
+                    <tr *ngFor="let trip of trips">
+                        <td>{{trip.dateDebut}}</td>
+                        <td (click)="updateTripSelected(trip)"><a href="#">{{trip.nom}}</a></td>
+                        <td>{{trip.lieu}}</td>
+                        <td>{{trip.lieu}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Detail trip -->
+        <div class="col" *ngIf="isTripSelected == true">
+            <h3 style="margin-top: 15px;">Détail de la sortie selectionnée :</h3>
+            <table class="table" style="margin-top: 20px;">
+                <tbody>
+                    <tr>
+                        <td>Distance :</td>
+                        <td>{{tripSelected.distance}}</td>
+                    </tr>
+                    <tr>
+                        <td>Denivele :</td>
+                        <td>{{tripSelected.denivele}}</td>
+                    </tr>
+                    <tr>
+                        <td>Altitude :</td>
+                        <td>{{tripSelected.altitude}}</td>
+                    </tr>
+                    <tr>
+                        <td>Commentaire :</td>
+                        <td>{{tripSelected.commentaire}}</td>
+                    </tr>
+                    <tr>
+                        <td>Tarif :</td>
+                        <td>{{tripSelected.tarif}}</td>
+                    </tr>
+                    <tr>
+                        <td>Coût autoroute :</td>
+                        <td>{{tripSelected.coutAutoroute}}</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre participant :</td>
+                        <td>{{tripSelected.participant}}</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre voiture :</td>
+                        <td>{{tripSelected.voiture}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Empty div to setup col organisation -->
+        <div class="col" *ngIf="isTripSelected == false"></div>
+    </div>
+</div>

@@ -10,7 +10,7 @@ export class AppComponent {
 
   firstname: string = ""
   secondname: string = ""
-  coreToDisplay: string = "Activity"
+  coreToDisplay: string = "Trip"
 
   coreToDisplayHandler(core: string) {
     this.coreToDisplay = core
