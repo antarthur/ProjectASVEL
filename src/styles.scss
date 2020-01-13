@@ -2,3 +2,225 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Colors used in the application */
+
+$white: #FFFFFF;
+$rt-red: #E3021B;
+$blue-grey: #1E7287;
+$blue-grey-hover: #086275;
+$green: #217F30;
+$green-hover: #005F21;
+$error-red: #bf0000;
+$red: #b21D1F;
+$red-hover: #860000;
+$text-black: #333333;
+$grey-icons: #626161;
+$cacaca: #cacaca;
+$grey-button: #737373;
+$grey-button-hover: #424242;
+$navbar-bg: #22282D;
+$navbar-item-active: #0F1219;
+$siren-red: #983741;
+$background-color-app: #f4f4f4;
+$background-color-normal-button: #ffffff;
+
+/* Font of the application */
+
+$font-family-sans-serif: 'Roboto',
+sans-serif;
+$font-family-base: $font-family-sans-serif !default;
+
+/* How much the buttons and other elements should be rounded */
+
+$border-radius: 10rem;
+
+/* Change the way the focus is shown on components */
+
+$input-focus-color: $blue-grey;
+$input-focus-border-color: $blue-grey;
+$input-btn-focus-box-shadow: 0 0 3px rgba($blue-grey, 0.8);
+$custom-select-focus-border-color: $blue-grey;
+$custom-select-focus-box-shadow: 0 0 3px rgba($blue-grey, 0.8);
+$pretty--color-primary: #4A4343;
+
+/* Import bootstrap design */
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Import pretty-checkbox design */
+
+// @import '~pretty-checkbox/src/pretty-checkbox.scss';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+html {
+    background-color: #F4F4F4;
+}
+
+
+/* body */
+
+body {
+    font-size: .875rem;
+    background-color: $background-color-app;
+}
+
+mat-checkbox {
+    color: rgb(201, 24, 24);
+}
+
+
+/* buttons */
+
+.btn {
+    font-size: .875rem;
+    padding: 0.375rem 1.50rem;
+}
+
+.btn-green-normal {
+    background-color: $white;
+    color: $green;
+    border-color: $green;
+}
+
+.btn-green-normal:hover {
+    background-color: $green-hover;
+    color: $white
+}
+
+.btn-green-normal:focus {
+    background-color: $green;
+    color: $white;
+}
+
+.btn-green-normal-action {
+    background-color: $green;
+    color: $white;
+    border-color: $green;
+}
+
+.btn-green-normal-action:hover {
+    background-color: $green-hover;
+    color: $white
+}
+
+.btn-green-normal-action:focus {
+    background-color: $green;
+    color: $white;
+}
+
+.btn-blue-normal {
+    background-color: $white;
+    color: $blue-grey;
+    border-color: $blue-grey;
+}
+
+.btn-blue-normal:hover {
+    background-color: $blue-grey-hover;
+    color: $white
+}
+
+.btn-blue-normal:focus {
+    background-color: $blue-grey;
+    color: $white;
+}
+
+.btn-blue-normal-action {
+    background-color: $blue-grey;
+    color: $white;
+    border-color: $blue-grey;
+}
+
+.btn-blue-normal-action:hover {
+    background-color: $blue-grey-hover;
+    color: $white
+}
+
+.btn-blue-normal-action:focus {
+    background-color: $blue-grey;
+    color: $white;
+}
+
+.btn-red-normal {
+    background-color: $white;
+    color: $red;
+    border-color: $red;
+}
+
+.btn-red-normal:hover {
+    background-color: $red-hover;
+    color: $white
+}
+
+.btn-red-normal:focus {
+    background-color: $red;
+    color: $white;
+}
+
+.btn-red-normal-action {
+    background-color: $red;
+    color: $white;
+    border-color: $red;
+}
+
+.btn-red-normal-action:hover {
+    background-color: $red-hover;
+    color: $white
+}
+
+.btn-red-normal-action:focus {
+    background-color: $red;
+    color: $white;
+}
+
+.btn-grey-normal {
+    background-color: $white;
+    color: $grey-button;
+    border-color: $grey-button;
+}
+
+.btn-grey-normal:hover {
+    background-color: $grey-button-hover;
+    color: $white
+}
+
+.btn-grey-normal:focus {
+    background-color: $grey-button;
+    color: $white;
+}
+
+.btn-grey-normal-action {
+    background-color: $grey-button;
+    color: $white;
+    border-color: $grey-button;
+}
+
+.btn-grey-normal-action:hover {
+    background-color: $grey-button-hover;
+    color: $white
+}
+
+.btn-grey-normal-action:focus {
+    background-color: $grey-button;
+    color: $white;
+}
+
+.btn-color {
+    color: $grey-button;
+    border-color: $grey-button;
+}
+
+/* Links */
+
+a {
+    color: #3366CC;
+}
+
+a:hover {
+    color: #014e91;
+}
