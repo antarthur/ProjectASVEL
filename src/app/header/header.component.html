@@ -44,7 +44,7 @@
         </div>
     </div>
 
-
+    <!-- Modal -->
     <ng-template #content let-modal>
         <div class="modal-header">
             <h4 class="modal-title" id="modal-basic-title">Se connecter</h4>
@@ -58,14 +58,10 @@
                 <span>Adresse mail :</span>&nbsp;&nbsp;&nbsp;
                 <input type="email" name="email" ngModel required /><br><br>
                 <span>Mot de passe :</span>&nbsp;&nbsp;
-                <input type="password" name="password" ngModel required />
-                <button>Submit</button>
+                <input type="password" name="password" ngModel required /><br><br>
+                <button class="btn btn-lg btn-color">Connexion</button>
             </form>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-outline-dark"
-                (click)="modal.close('Connection click')">Connexion</button>
-        </div>
+        
     </ng-template>
-
 </header>

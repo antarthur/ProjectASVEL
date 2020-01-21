@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import {NgForm} from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import bcrypt from 'bcrypt';
 
 @Component({
     selector: 'app-header',
@@ -44,9 +45,16 @@ export class HeaderComponent implements OnInit {
 
     onSubmit(form: NgForm) {
         this.email = form.value.email
-        this.password = form.value.password
+
+        const saltRounds = 10
+        const myPlaintextPassword = form.value.password
+        this.password = bcrypt.genSalt(saltRounds, function(err, salt) {
+            bcrypt.hash(myPlaintextPassword, salt, function(err, hash) {
+                // Store hash in your password DB.
+            });
+        });
         console.log(this.email);
         console.log(this.password);
-      }
+    }
 
 }
